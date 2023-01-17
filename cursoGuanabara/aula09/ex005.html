@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: #1a5187;
+            color: white;
+            font: normal 18pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript </p>
+    <div id='msg'>
+       Clique em mim
+    </div>
+    <script>
+    var paragrafo = document.getElementsByTagName('p')[0] //Zero é o primeiro componente que quero acessar
+    paragrafo.style.color = 'red'
+    document.write('Está escrito assim: ' + paragrafo.innerText)
+    var corpo = document.body
+    corpo.style.background = 'green'
+
+    /*var clicar = document.getElementById('msg')
+    clicar.style.color = 'orange'*/
+
+    var clicar = document.querySelector('div#msg')
+    clicar.style.background = 'blue'
+    </script>
+
+</body>
+</html>
