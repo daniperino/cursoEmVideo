@@ -3,10 +3,13 @@
 function carregar(){
     var msg = document.getElementById('msg')
     var img = document.getElementById('imagem')
+
     var dataAtual = new Date()
     //var hora = dataAtual.getHours()
+    var diaSemana = dataAtual.getDay() //pegou o dia da semana mas em número
     var hora = 8
-    msg.innerHTML = `Agora são ${hora} horas`
+    msg.innerHTML = `Agora são ${hora} horas - ${diaSemana}`
+
     if (hora >= 0 && hora < 12){
         //Bom Dia!
         img.src = 'manha.png'
