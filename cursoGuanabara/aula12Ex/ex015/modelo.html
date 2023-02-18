@@ -8,13 +8,28 @@
     <title>Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="aoAbrir()">
+<body>
 <header>
-    <h1>Qual ano você nasceu</h1>
+    <h1>Verificador de idade</h1>
 </header>
 <section>
-    <div id="msg">
-        aqui aparece o texto
+    <div>
+        <p>Ano do nascimento: 
+            <input type="number" name="txtano" id="txtano" min="0">
+        </p>
+        <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked> <!checked é para ficar marcado um radio button>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+
+    </div>
+    <div id="resul">
+        Preencha os dados acima para você ver os resultados!
     </div>
     <div id="photo">
         <img id="imagem" src="bebeMulher.png" alt="foto de uma pessoa">
