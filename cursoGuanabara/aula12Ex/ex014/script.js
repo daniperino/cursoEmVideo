@@ -1,6 +1,6 @@
 //Arquivo gerado através do HTML, pela tag <scrip>
 
-weekDays = ["Domingo", "Segunda-Feira", "Tera-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"]
+weekDays = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"]
 // array dos dias da semana para não ficar números
 function carregar(){
     const msg = document.getElementById('msg') //const pq nunca vai mudar, então não usa let
@@ -12,7 +12,6 @@ function carregar(){
     //let hora = 13
     msg.innerHTML = `Agora são ${hora} horas - ${diaSemana}`
 
-    console.log(weekDays)
 
     if (hora >= 0 && hora < 12){
         //Bom Dia!
