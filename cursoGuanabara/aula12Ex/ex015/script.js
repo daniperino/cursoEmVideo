@@ -12,9 +12,9 @@ function verificar() {
     }else{
         let formsex = document.getElementsByName("radsex")
         let idade = ano - Number(formAno.value)
-        let genero = '' //inicia vazia
-        if (formsex[0].checked){
-            genero = "homem"
+        let genero = '' //inicia vazia e dentro do if coloca o conteúdo
+        if (formsex[0].checked){ //ponto checked pois é o radio button que está selecionado
+            genero = "homem" // aqui coloca o genero desse if
             if (idade >=0 && idade <=1){
                 //bebe
                 img.src = 'bebeHomem.png'
