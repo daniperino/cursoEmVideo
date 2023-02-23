@@ -7,9 +7,9 @@ function carregar(){
     const img = document.getElementById('imagem')
 
     const dataAtual = new Date()
-    let hora = dataAtual.getHours()
+    //let hora = dataAtual.getHours()
     let diaSemana = weekDays[dataAtual.getDay()] //coloca o array e dentro das colchetes[] coloca o comando
-    //let hora = 13
+    let hora = 13
     msg.innerHTML = `Agora são ${hora} horas - ${diaSemana}`
 
     console.log(weekDays)
