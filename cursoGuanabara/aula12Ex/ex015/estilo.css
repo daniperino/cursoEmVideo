@@ -23,3 +23,11 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+#resul{ /*pegou o ID do HTML*/
+    text-align: center;
+}
+
+#photo{
+    text-align: center;
+}
