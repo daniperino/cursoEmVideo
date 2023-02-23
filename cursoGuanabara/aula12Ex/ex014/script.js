@@ -4,26 +4,27 @@ weekDays = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-
 // array dos dias da semana para não ficar números
 function carregar(){
     const msg = document.getElementById('msg') //const pq nunca vai mudar, então não usa let
-    const img = document.getElementById('imagem')
+    const image = document.getElementById('imagem')
+    const mdd = document.getElementById('mensagemDoDia')
 
     const dataAtual = new Date()
     //let hora = dataAtual.getHours()
     let diaSemana = weekDays[dataAtual.getDay()] //coloca o array e dentro das colchetes[] coloca o comando
-    let hora = 13
+    let hora = 8
     msg.innerHTML = `Agora são ${hora} horas - ${diaSemana}`
 
 
     if (hora >= 0 && hora < 12){
-        //Bom Dia!
-        img.src = 'manha.png'
+            mdd.innerHTML = ' Bom dia!'
+            image.src = 'manha.png'
         document.body.style.background='#c8c5b9'
     }else if (hora < 18){
         //Boa Tarde!
-        img.src = 'tarde.png'
+        image.src = 'tarde.png'
         document.body.style.background='#fea03c'
     }else{
         //Boa noite!
-        img.src = 'noite.png'
+        image.src = 'noite.png'
         document.body.style.background='#413e49'
     }
 }
