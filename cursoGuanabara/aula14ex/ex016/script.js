@@ -8,10 +8,14 @@ function contar(){
     if (formInicio.value.length == '' || formFim.value.length == '' || formPasso.value.length == ''){
         alert('[ERRO] Formulário não pode estar vazio, preencha!!!')
    }else{
-        resul.innerText = 'Contando...'
+        resul.innerHTML = 'Contando...'
         let i = Number(formInicio.value)
         let f = Number(formFim.value)
         let p = Number(formPasso.value)
+
+        for(let c = i; c <= f; +=c){
+            resul.innerHTML = `${c}`
+        }
 
     }
 
