@@ -7,6 +7,11 @@ function contar(){
     let resul = document.getElementById('preparar')
     if (formInicio.value.length == '' || formFim.value.length == '' || formPasso.value.length == ''){
         alert('[ERRO] Formulário não pode estar vazio, preencha!!!')
+   }else{
+        resul.innerText = 'Contando...'
+        let i = Number(formInicio.value)
+        let f = Number(formFim.value)
+        let p = Number(formPasso.value)
 
     }
 
