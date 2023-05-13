@@ -5,19 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Modelo de exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 <header>
-    <h1>Título</h1>
+    <h1>Tabuada</h1>
 </header>
 <section>
     <div>
-        Testando...
+        <p>Número: <input type="number" name="tabuada" id="txtNum">
+        <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p> 
     </div>
     <div>
-        Olá
+        <select 
+            name="tabuada" id="selTab" size="10">
+            <option>Digite um número acima&nbsp;</option> <!--&nbsp; para dar espaços no final da frase-->
+        </select>
     </div>
 </section>
 <footer>
