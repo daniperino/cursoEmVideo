@@ -3,7 +3,7 @@
 let num = [1, 3, 2]
 num [3] = 5 //acrescenta o 10 na posição 3
 num.sort() // coloca em ordem crescente - em ordem - como o push está embaixo, o 4 não fica na ordem
-num.push(4) // .push acrescenta na última posição o 9
+num.push(4) // .push acrescenta na última posição o valor do ()
 
 
 console.log(`Nosso vetor é ${num}`)
